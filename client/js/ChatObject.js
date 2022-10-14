@@ -61,7 +61,7 @@ class ChatObject {
         this.chatContext.canvas.style.marginLeft = center.x;
         this.chatContext.canvas.style.marginTop = center.y;
         this.chatContext.canvas.style.background = "transparent";
-        this.chatContext.canvas.style.border = "2px solid red";
+        //this.chatContext.canvas.style.border = "2px solid red";
     }
 
     resetTypeWriter() {
