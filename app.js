@@ -46,7 +46,7 @@ class GridSystem {
         this.allMatrixes = new AllMatrixes();
         this.allMatrixesBackup = JSON.parse(JSON.stringify(new AllMatrixes()));
         this.matrix = this.allMatrixes.area2;
-        this.startingSteps = 500;
+        this.startingSteps = 2000;
         this.maxSteps = 150;
         this.keyCodes = {
             37: {x: -1, y: 0},
@@ -292,6 +292,20 @@ io.sockets.on('connection', function (sock) {
 
         gridSystem.emitToUsers('sendMatrix');
         
+    });
+
+    sock.on('addStepsAll', (data) => {
+        
+        gridSystem.playersArr.forEach((player) => {
+            var convertToNum = Number(data);
+                
+            var message2 = player.id + " added " + convertToNum + " steps succesful!"
+            player.steps += convertToNum;
+            io.emit('chat-to-clients', message2);
+                
+
+            gridSystem.emitToUsers('sendMatrix');
+        });
     });
 
 
