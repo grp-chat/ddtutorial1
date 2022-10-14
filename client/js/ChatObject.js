@@ -29,7 +29,7 @@ class ChatObject {
             //x: window.innerWidth - (this.chatContext.canvas.width + 300) + "px",
             //y: window.innerHeight - (this.chatContext.canvas.height + 25) + "px"
             x: 0 + "px",
-            y: 25 + "px"
+            y: 20 + "px"
         };
     }
 
