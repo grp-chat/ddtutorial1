@@ -46,7 +46,7 @@ class GridSystem {
         this.allMatrixes = new AllMatrixes();
         this.allMatrixesBackup = JSON.parse(JSON.stringify(new AllMatrixes()));
         this.matrix = this.allMatrixes.area2;
-        this.startingSteps = 2000;
+        this.startingSteps = 500;
         this.maxSteps = 150;
         this.keyCodes = {
             37: {x: -1, y: 0},
