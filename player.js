@@ -14,6 +14,7 @@ class Player {
         this.originArea = config.area;
         this.inventory = "";
         this.maxInventory = 10;
+    
     }
 
 }
