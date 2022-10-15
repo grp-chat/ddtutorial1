@@ -64,15 +64,15 @@ class GridSystem {
         this.playersArr = [
             this.p1 = new Player({x: 32, y: 19, lable: 2, id: this.extraArr[0], area: "area1", color: "grey"}),
 
-            this.p2 = new Player({x: 1, y: 2, lable: 3, id: this.extraArr[1], area: "area1", color: "lightblue"}),
-            this.p3 = new Player({x: 1, y: 3, lable: 4, id: this.extraArr[2], area: "area1", color: "white"}),
-            this.p4 = new Player({x: 1, y: 4, lable: 5, id: this.extraArr[3], area: "area1", color: "yellow"}),
-            this.p5 = new Player({x: 1, y: 5, lable: 6, id: this.extraArr[4], area: "area1", color: "green"}),
-            this.p6 = new Player({x: 4, y: 2, lable: 7, id: this.extraArr[5], area: "area1", color: "blue"}),
-            this.p7 = new Player({x: 4, y: 3, lable: 8, id: this.extraArr[6], area: "area1", color: "orange"}),
-            this.p8 = new Player({x: 4, y: 4, lable: 9, id: this.extraArr[7], area: "area1", color: "teal"}),
-            this.p9 = new Player({x: 4, y: 5, lable: 10, id: this.extraArr[8], area: "area1", color: "pink"}),
-            this.p10 = new Player({x: 1, y: 6, lable: 11, id: this.extraArr[9], area: "area1", color: "purple"})
+            this.p2 = new Player({x: 1, y: 2, lable: 3, id: this.extraArr[1], area: "area1", color: "magenta"}),
+            this.p3 = new Player({x: 1, y: 3, lable: 4, id: this.extraArr[2], area: "area1", color: "yellow"}),
+            this.p4 = new Player({x: 1, y: 4, lable: 5, id: this.extraArr[3], area: "area1", color: "teal"}),
+            this.p5 = new Player({x: 1, y: 5, lable: 6, id: this.extraArr[4], area: "area1", color: "deepskyblue"}),
+            this.p6 = new Player({x: 4, y: 2, lable: 7, id: this.extraArr[5], area: "area1", color: "springgreen"}),
+            this.p7 = new Player({x: 4, y: 3, lable: 8, id: this.extraArr[6], area: "area1", color: "pink"}),
+            this.p8 = new Player({x: 4, y: 4, lable: 9, id: this.extraArr[7], area: "area1", color: "hotpink"}),
+            this.p9 = new Player({x: 4, y: 5, lable: 10, id: this.extraArr[8], area: "area1", color: "orange"}),
+            this.p10 = new Player({x: 1, y: 6, lable: 11, id: this.extraArr[9], area: "area1", color: "fuchsia"})
         ];
 
         this.itemsArr = [
