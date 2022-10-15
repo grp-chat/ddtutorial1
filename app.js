@@ -198,6 +198,7 @@ class GridSystem {
         this.playersArr.forEach((player) => {
             this.transitionToAnotherArea5(levelSequence[level], player);
             player.area = levelSequence[level];
+            player.steps = 0;
         });
 
     }
