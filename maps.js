@@ -26,8 +26,8 @@ class AllMatrixes {
                 [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
                 
             ],
-                title: "Level 1",
-                    doors: [
+            title: "Level 1",
+            doors: [
                         { x: 1, y: 8, toArea: "area1", appearingCoords: { x: 23, y: 11 } },
                         { x: 22, y: 11, toArea: "area1", appearingCoords: { x: 1, y: 7 } },
 
@@ -72,9 +72,10 @@ class AllMatrixes {
 
                         { x: 22, y: 7, toArea: "area1", appearingCoords: { x: 31, y: 12 } },
                         { x: 30, y: 12, toArea: "area1", appearingCoords: { x: 23, y: 7 } },
-                    ]
+            ]
 
-        },
+        };
+
         this.area2 = {
             gridMatrix: [
                 [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
@@ -100,8 +101,8 @@ class AllMatrixes {
                 [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
 
             ],
-                title: "Level 2",
-                    doors: [
+            title: "Level 2",
+            doors: [
                         { x: 4, y: 7, toArea: "area2", appearingCoords: { x: 31, y: 2 } },
                         { x: 31, y: 1, toArea: "area2", appearingCoords: { x: 3, y: 7 } },
 
@@ -145,8 +146,8 @@ class AllMatrixes {
                         { x: 14, y: 1, toArea: "area2", appearingCoords: { x: 30, y: 12 } },
                         { x: 30, y: 11, toArea: "area2", appearingCoords: { x: 14, y: 2 } },
 
-                    ],
-            }
+            ],
+        };
 
         this.area3 = {
             gridMatrix: [
@@ -174,8 +175,8 @@ class AllMatrixes {
 
 
             ],
-                title: "Level 3",
-                    doors: [
+            title: "Level 3",
+            doors: [
                         { x: 4, y: 7, toArea: "area3", appearingCoords: { x: 31, y: 2 } },
                         { x: 31, y: 1, toArea: "area3", appearingCoords: { x: 3, y: 7 } },
 
@@ -233,8 +234,8 @@ class AllMatrixes {
 
                         { x: 23, y: 4, toArea: "area3", appearingCoords: { x: 30, y: 14 } },
                         { x: 29, y: 14, toArea: "area3", appearingCoords: { x: 24, y: 4 } }
-                    ],
-            }
+            ],
+        }
 
         this.area4 = {
             gridMatrix: [
@@ -261,8 +262,8 @@ class AllMatrixes {
                 [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
 
             ],
-                title: "Level 4",
-                    doors: [
+            title: "Level 4",
+            doors: [
                         { x: 4, y: 7, toArea: "area4", appearingCoords: { x: 31, y: 2 } },
                         { x: 31, y: 1, toArea: "area4", appearingCoords: { x: 3, y: 7 } },
 
@@ -305,8 +306,8 @@ class AllMatrixes {
                         { x: 26, y: 9, toArea: "area4", appearingCoords: { x: 30, y: 12 } },
                         { x: 29, y: 12, toArea: "area4", appearingCoords: { x: 26, y: 8 } },
 
-                    ],
-            }
+            ],
+        }
 
     }
 
