@@ -2,6 +2,7 @@ class GridSystemClient {
     constructor(config) {
         this.matrix = config.playerMatrix;
         this.redDoorCoords = config.redDoorCoords;
+        this.finishFlags = config.finishFlags;
         this.areaTitle = config.playerAreaTitle;
         this.itemsArr = config.itemsArr;
 
@@ -197,6 +198,13 @@ class GridSystemClient {
 
         });
     }
+    renderFinishFlags() {
+        this.finishFlags.forEach((flag) => {
+            this.outlineContext.font = "17px Times New Roman";
+            this.outlineContext.fillText("🏁", flag.x * (this.cellSize + this.padding) + 3,
+                flag.y * (this.cellSize + this.padding) + 21);
+        });
+    }
     setTopTitle() {
         this.uiContext.font = "20px Courier";
         this.uiContext.fillStyle = "white";
@@ -243,6 +251,7 @@ class GridSystemClient {
             }
         }
         this.renderRedDoors();
+        this.renderFinishFlags();
         this.setTopTitle(this.matrix);
         
     }

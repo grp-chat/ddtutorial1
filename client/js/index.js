@@ -197,13 +197,14 @@ function clientRender(data) {
     const {
         gridMatrix: playerMatrix, 
         title: playerAreaTitle, 
-        doors: redDoorCoords
+        doors: redDoorCoords,
+        finishFlags: finishFlags
         } = data.allMatrixes[getPlayerObject.area];
     
     const {playersArr, extraArr, itemsArr} = data;
 
 
-    const config = { playersArr, extraArr, itemsArr, playerMatrix, playerAreaTitle, redDoorCoords };
+    const config = { playersArr, extraArr, itemsArr, playerMatrix, playerAreaTitle, redDoorCoords, finishFlags };
     const clientRender = new GridSystemClient(config);
     clientRender.render();
      
