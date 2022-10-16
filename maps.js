@@ -371,8 +371,8 @@ class AllMatrixes {
 
                 //========================================================================
 
-                { x: 2, y: 9, toArea: "area5", appearingCoords: { x: 3, y: 12 } },
-                { x: 3, y: 11, toArea: "area5", appearingCoords: { x: 2, y: 8 } },
+                //{ x: 2, y: 9, toArea: "area5", appearingCoords: { x: 3, y: 12 } },
+                { x: 2, y: 11, toArea: "area5", appearingCoords: { x: 2, y: 8 } },
 
                 { x: 4, y: 15, toArea: "area5", appearingCoords: { x: 7, y: 12 } },
                 { x: 6, y: 12, toArea: "area5", appearingCoords: { x: 3, y: 15 } },
