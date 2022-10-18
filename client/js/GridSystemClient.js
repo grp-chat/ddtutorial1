@@ -9,6 +9,7 @@ class GridSystemClient {
         this.uiContext = this.getContext(0, 0, "transparent", false);
         this.outlineContext = this.getContext(0, 0, "transparent");
         this.topContext = this.getContext(0, 0, "transparent", false);
+        this.lableContext = this.getContext(500, 500, "white", false);
         //this.chatContext = this.getContext(1000, 580, "transparent", false);
 
         this.cellSize = 27;
@@ -104,7 +105,7 @@ class GridSystemClient {
         this.topContext.canvas.style.border = "solid 1px black";
         this.topContext.font = "12px Courier";
         this.topContext.fillStyle = "white";
-        //this.chatContext.canvas.style.border = "5px solid red";
+        //this.topContext.canvas.style.border = "5px solid red";
 
         var nextLine = 10
 
@@ -126,19 +127,33 @@ class GridSystemClient {
         });
         nextLine = nextLine - 5;
 
-
-
         this.topContext.beginPath();
         this.topContext.moveTo(0, nextLine);
         this.topContext.lineTo(270, nextLine);
         this.topContext.strokeStyle = "white";
         this.topContext.stroke();
     }
+    lableContextSettings() {
+
+        const w = (this.cellSize + this.padding) * this.matrix[0].length - (this.padding);
+        const h = (this.cellSize + this.padding) * this.matrix.length - (this.padding);
+
+        this.lableContext.canvas.width = w;
+        this.lableContext.canvas.height = h;
+        //const center = this.getCenter(w, h);
+        const center = this.getTopLeftFromUIContext();
+        this.lableContext.canvas.style.marginLeft = center.x;
+        this.lableContext.canvas.style.marginTop = center.y;
+
+        this.lableContext.canvas.style.background = "transparent";
+        this.lableContext.canvas.style.border = "2px solid blue";
+    }
     setAllCanvasSettings() {
         this.uiContextSettings();
         this.outlineContextSettings();
         //this.chatContextSettings();
         this.topContextSettings();
+        this.lableContextSettings();
     }
 
 
@@ -216,21 +231,21 @@ class GridSystemClient {
         // this.uiContext.fillText(this.areaTitle, 20, 30);
     }
 
-    typeWriter(){
+    // typeWriter(){
         
-        const { x, y } = this.playersArr[0];
+    //     const { x, y } = this.playersArr[0];
         
-        this.char = this.text.substr(0, this.i);  
-        // Clear the canvas
-        this.chatContext.clearRect(0,0,this.chatContext.canvas.width, this.chatContext.canvas.height)
-        this.chatContext.font = '11px Courier';
-        this.chatContext.fillStyle = 'white';
-        this.chatContext.fillText(this.char, x * (this.cellSize + this.padding), y * (this.cellSize));  
-        if (this.i<=this.text.length){
-          setTimeout(this.typeWriter.bind(this), this.fps)
-          this.i++
-        }
-      }
+    //     this.char = this.text.substr(0, this.i);  
+    //     // Clear the canvas
+    //     this.chatContext.clearRect(0,0,this.chatContext.canvas.width, this.chatContext.canvas.height)
+    //     this.chatContext.font = '11px Courier';
+    //     this.chatContext.fillStyle = 'white';
+    //     this.chatContext.fillText(this.char, x * (this.cellSize + this.padding), y * (this.cellSize));  
+    //     if (this.i<=this.text.length){
+    //       setTimeout(this.typeWriter.bind(this), this.fps)
+    //       this.i++
+    //     }
+    //   }
 
     render() {
 
